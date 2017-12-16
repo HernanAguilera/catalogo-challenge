@@ -1,0 +1,7 @@
+.vscode
+db.sqlite3
+*.py[co]
+*.sw[po]
+*.bak
+*.orig
+*~
