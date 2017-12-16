@@ -13,7 +13,7 @@ class Catalogo(models.Model):
 
 class Area(models.Model):
     descripcion = models.CharField(max_length=256)
-    name = models.ForeignKeyField('core.Catalogo', related_name='areas', on_delete=models.DO_NOTHING)
+    catalogo = models.ForeignKeyField('core.Catalogo', related_name='areas', on_delete=models.DO_NOTHING)
 
     def __str__(self):
         return self.descripcion
