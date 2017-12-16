@@ -1,7 +1,7 @@
 from rest_framework import generics
 
 from .models import Catalogo, Area, Item
-from .serializers import CatalogoSerializer, AreaSerializer, Item
+from .serializers import CatalogoSerializer, AreaSerializer, ItemSerializer
 
 class CatalogoList(generics.ListCreateAPIView):
     """
